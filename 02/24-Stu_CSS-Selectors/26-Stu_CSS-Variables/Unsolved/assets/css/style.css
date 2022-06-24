@@ -1,3 +1,16 @@
+/* the concept here is to find the
+variables and make it short
+You can do any property not just colors 
+that way you can change it in one place 
+instead of more than once*/
+
+:root {
+  --white: #fff;
+  --dark: #13293d;
+  --orange: #d8a47f;
+  --shadow: #aaaaaa;
+}
+
 body {
   font-size: 16px;
   display: flex;

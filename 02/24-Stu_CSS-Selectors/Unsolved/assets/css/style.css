@@ -69,6 +69,17 @@ footer {
 }
 
 /* TODO: Add code here to select all <a> elements that link to a file with a `.css` extension */
+/* the href tells you to look at something
+the $ tells you where it is,
+look in the href attribute and text that ends in .cc
+therefore the end of the line*/
+
+a[href$=".css"]::after {
+  content:"📝 ";
+  margin-left: 3px; 
+  display: inline-block;
+}
+
 
 @media screen and (max-width: 768px) {
   header {
