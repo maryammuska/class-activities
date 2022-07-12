@@ -7,7 +7,7 @@ var planet = {
   population: "7.594 billion",
   // Objects can store arrays in a key-value pair
   neighboringPlanets: ["Mars", "Venus"],
-  // Objects can also store methods
+  // Objects can also store functions also called methods
   tellFunFact: function () {
     console.log("The earth is the only planet in our solar system not named after a Roman god or goddess.");
   },
