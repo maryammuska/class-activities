@@ -3,6 +3,30 @@ var nameInputEl = $('#skill-name');
 var dateInputEl = $('#datepicker');
 var skillsListEl = $('#skills-list');
 
+var availableTags = [
+  "ActionScript",
+  "AppleScript",
+  "Asp",
+  "BASIC",
+  "C",
+  "C++",
+  "Clojure",
+  "COBOL",
+  "ColdFusion",
+  "Erlang",
+  "Fortran",
+  "Groovy",
+  "Haskell",
+  "Java",
+  "JavaScript",
+  "Lisp",
+  "Perl",
+  "PHP",
+  "Python",
+  "Ruby",
+  "Scala",
+  "Scheme"];
+
 var printSkills = function (name, date) {
   var listEl = $('<li>');
   var listDetail = name.concat(' on ', date);
@@ -32,5 +56,14 @@ formEl.on('submit', handleFormSubmit);
 // Add Autocomplete widget here
 //
 
+$( "#skill-name" ).autocomplete({
+  source: availableTags})
+
 // Add Datepicker widget here
 //
+
+$( function() {
+  $( "#datepicker" ).datepicker();
+  changeMonth: true;
+  changeYear: true;
+} );

@@ -14,11 +14,19 @@
 
   <main class="d-flex min-vh-100">
     <div class="container-fluid my-auto">
+      <!-- the container changes the gutter -->
+      <!-- the margin on each side can expand or contract -->
       <h1 class="display-3 text-center">Bootstrap UI Components</h1>
+      <!-- display could be size or stack it  -->
       <div class="row justify-content-center">
         <div class="col-12 col-md-9 p-4 bg-dark">
           <div class="row">
             <div class="col-12 col-md-4 ">
+              <!--  if its medium or larger we want it to use 4 slots -->
+              <!-- standard bootstrap template is 12  if its md (medium) or larger 
+              we want it to take up 4 line -->
+              <!-- if we want smaller than medium width we have to use Col-12 -->
+              <!-- this is how it changes with expanding and contracting the weidth of browsers  -->
               <a href="./component-navbar.html" class="btn btn-block p-3 my-2 btn-success">Navbar</a>
             </div>
             <div class="col-12 col-md-4 ">
@@ -30,6 +38,7 @@
           </div>
         </div>
         <div class="col-12 mt-3 text-center">
+          <!-- col-12 is using the entire screen and mg means margin top -->
           <h4>This entire page is built with Bootstrap</h4>
         </div>
       </div>
