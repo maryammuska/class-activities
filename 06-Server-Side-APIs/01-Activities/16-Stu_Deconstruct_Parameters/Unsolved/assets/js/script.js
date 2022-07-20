@@ -9,3 +9,7 @@ fetch(
     console.log(data);
   });
 // Parameter explanation.
+// string is closed 
+// only 10 results
+// only open issues
+// sorted by the most recently added 

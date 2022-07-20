@@ -4,6 +4,7 @@ var fetchButton = document.getElementById('fetch-button');
 function getApi() {
   // fetch request gets a list of all the repos for the node.js organization
   var requestUrl = 'https://api.github.com/orgs/nodejs/repos';
+  /* open this up in the terminal through curl*/
 
   fetch(requestUrl)
     .then(function (response) {
@@ -32,3 +33,5 @@ function getApi() {
 }
 
 fetchButton.addEventListener('click', getApi);
+
+/* java is single threaded */

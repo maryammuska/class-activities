@@ -1,3 +1,5 @@
 Instruction will demostrate this in the browser console.
 https://developer.mozilla.org/en-US/docs/Web/API/Document/location
 
+to set location on inspect console
+document.location.href = "https://www.amazon.com"
