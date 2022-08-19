@@ -1,3 +1,4 @@
+var site = document.querySelector("h4");
 var site1El = document.querySelector(".site1");
 var site2El = document.querySelector(".site2");
 var site3El = document.querySelector(".site3");
@@ -21,8 +22,14 @@ site3El.children[1].children[0].setAttribute("alt", "women working");
 site3El.children[1].children[0].setAttribute("style", "padding:10px;");
 
 // Write Your Code Below
-var main = document.querySelectorAll("h4");
-for (var i = 0; i < main.length; i++) {
-    main[i].setAttribute("style", "font-size: 30px; font-weight: bold; color: blue;");
+
+
+for(var i = 0; i < sites.length; i++){
+    site[i].setAttribute("style","color:blue; font-size:30px; font-weight:bolder; padding-left:10px; margin:0");
 }
 
+// * It's done when all the `<h4>` elements are selected and stored in a single variable.
+
+// * It's done when the text of each `<h4>` is set to `blue`, the font size is `30px`, and the text is `bold`.
+
+// * It's done when the padding to the left of the title is set to `10px` and the margin is set to `0`.

@@ -31,7 +31,6 @@ function sayTigers() {
 var bears = "Bears";
 
 function sayBears() {
-    // var bears = "Pandas";
     console.log(bears + "! OH MY!");
     return;
 }

@@ -21,6 +21,7 @@ var formSubmitHandler = function (event) {
 
 var buttonClickHandler = function (event) {
   // What is `event.target` referencing?
+  // whatever the data langauge button is clicked then it let it pass 
   // TODO: Write your answer here
   var language = event.target.getAttribute('data-language');
 
@@ -55,7 +56,9 @@ var getUserRepos = function (user) {
 
 var getFeaturedRepos = function (language) {
   // What are the query parameters doing here?
-  // TODO: Write your answer here
+  // the query paramenters are everything after the question mark
+  // the que is a query, we are calling API, searching for repos with java in it 
+  // then we say it is featured, thats how the query is done 
   var apiUrl = 'https://api.github.com/search/repositories?q=' + language + '+is:featured&sort=help-wanted-issues';
 
   fetch(apiUrl).then(function (response) {
@@ -73,7 +76,7 @@ var displayRepos = function (repos, searchTerm) {
   if (repos.length === 0) {
     repoContainerEl.textContent = 'No repositories found.';
     // What would happen if there was no `return;` here?
-    // TODO: Write your answer here
+    // it just updates the searchTerm
     return;
   }
 
@@ -81,7 +84,7 @@ var displayRepos = function (repos, searchTerm) {
 
   for (var i = 0; i < repos.length; i++) {
     // What is the result of this string concatenation?
-    // TODO: Write your answer here
+    //it creates one long 
     var repoName = repos[i].owner.login + '/' + repos[i].name;
 
     var repoEl = document.createElement('div');
@@ -110,3 +113,5 @@ var displayRepos = function (repos, searchTerm) {
 
 userFormEl.addEventListener('submit', formSubmitHandler);
 languageButtonsEl.addEventListener('click', buttonClickHandler);
+// when the container is clicked, it'll pass an event once the button is clicked
+

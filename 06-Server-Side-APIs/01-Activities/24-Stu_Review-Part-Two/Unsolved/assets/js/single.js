@@ -5,6 +5,7 @@ var limitWarningEl = document.querySelector('#limit-warning');
 var getRepoName = function () {
   // Where is this value coming from?
   // TODO: Write your answer here
+  //  getting the queryString from the URL 
   var queryString = document.location.search;
   var repoName = queryString.split('=')[1];
 
@@ -15,6 +16,7 @@ var getRepoName = function () {
   } else {
     // Under what condition will this run?
     // TODO: Write your answer here
+    // if there are no repoName returned
     document.location.replace('./index.html');
   }
 };
@@ -29,6 +31,7 @@ var getRepoIssues = function (repo) {
 
         // What is this checking for? Under what condition will this be `true`?
         // TODO: Write your answer here
+        // Because there is a repo name, 
         if (response.headers.get('Link')) {
           displayWarning(repo);
         }

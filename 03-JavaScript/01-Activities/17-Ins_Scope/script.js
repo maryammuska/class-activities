@@ -53,3 +53,4 @@ var sayWhatAgain = function () {
 sayGoodbye();
 sayWhat();
 sayWhatAgain();
+sayGoodbyeAgain();

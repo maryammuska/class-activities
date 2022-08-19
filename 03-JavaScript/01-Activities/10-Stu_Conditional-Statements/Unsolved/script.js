@@ -8,9 +8,6 @@ var expression2 = (x > 50); //false
 // && means both have to be true
 
 
-
-
-
 if (expression1 && expression2) { // this is false
     console.log(" True ✅ True ✅ ") // bc the first line is false, it wont run
 }  else if (!expression1 && expression2) { //simplified by removing !expression1 bc its already implied that its false 

@@ -41,10 +41,9 @@ infoEl.setAttribute("style", "margin:auto; width:50%; text-align:center;");
 imgEl.setAttribute("src", "http://placekitten.com/200/300");
 nameEl.setAttribute("style", "font-size:25px; text-align:center;");
 kittenEl.setAttribute("style", "font-size:25px; text-align:center;");
-favoriteEl.setAttribute("style", "font-size:20px;");
-favoriteEl.children[0].setAttribute('');
+favoriteEl.setAttribute("style", "font-size:20px, background-color: #33333, padding: 20px");
 for (var i = 0; i < 4; i++) {
-    favoriteEl.children[0] 
+    favoriteEl.children[0].children[1].setAttribute('style, color: white, padding: 5px, margin-left: 35px')
 }
 
 // TODO: Add ordered list items containing four favorite foods

@@ -14,3 +14,8 @@ var zooAnimals = ["Bears", "Giraffes", "Penguins", "Meerkats"];
 for (var i = 0; i < zooAnimals.length; i++) { 
     console.log("I am going to zoo to see " + zooAnimals[i] + ".");
 }
+
+// // to work backwards from meerkats to bears
+// for (var i = zooAnimals.length-1; i >= 0, i--) { 
+//     console.log("I am going to zoo to see " + zooAnimals[i] + ".");
+// }
